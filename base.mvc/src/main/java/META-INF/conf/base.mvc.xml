@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.springframework.org/schema/beans" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+	http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd">
+	<!-- Freemarker配置 -->
+	<bean id="freemarkerConfigurer" class="com.biocome.base.mvc.config.FreeMarkerConfigurer">
+		<property name="defaultEncoding" value="${freemarker.encoding:UTF-8}" />
+		<property name="freemarkerSettings">
+			<props>
+				<prop key="template_update_delay">5</prop>
+				<prop key="url_escaping_charset">${freemarker.encoding:UTF-8}</prop>
+				<prop key="default_encoding">${freemarker.encoding:UTF-8}</prop>
+				<prop key="output_encoding">${freemarker.encoding:UTF-8}</prop>
+				<prop key="locale">${freemarker.locale:zh_CN}</prop>
+				<prop key="datetime_format">${freemarker.datetime:yyyy-MM-dd HH:mm:ss}</prop>
+				<prop key="date_format">${freemarker.date:yyyy-MM-dd}</prop>
+				<prop key="time_format">${freemarker.time:HH:mm:ss}</prop>
+				<prop key="number_format">${freemarker.number:#}</prop>
+				<prop key="boolean_format">${freemarker.boolean:true,false}</prop>
+				<prop key="classic_compatible">true</prop>
+				<prop key="whitespace_stripping">true</prop>
+			</props>
+		</property>
+	</bean>
+	<!-- 视图配置 -->
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
+		<property name="ignoreAcceptHeader" value="true" />
+		<property name="favorParameter" value="false" />
+		<property name="defaultContentType" value="text/html" />
+		<property name="mediaTypes">
+			<map>
+				<entry key="json" value="application/json" />
+				<entry key="xml" value="application/xml" />
+			</map>
+		</property>
+		<property name="viewResolvers">
+			<list>
+				<bean
+					class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
+					<property name="suffix" value=".ftl" />
+					<property name="contentType" value="text/html;charset=${freemarker.view.encoding:UTF-8}" />
+					<property name="exposeRequestAttributes" value="true" />
+					<property name="exposeSessionAttributes" value="true" />
+					<property name="exposeSpringMacroHelpers" value="true" />
+				</bean>
+			</list>
+		</property>
+		<property name="defaultViews">
+			<list>
+				<bean class="com.biocome.base.mvc.handler.GenericXStreamView" />
+				<bean class="com.biocome.base.mvc.handler.GenericJacksonView" />
+			</list>
+		</property>
+	</bean>
+	<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+		<property name="messageConverters">
+			<list>
+				<bean
+					class="org.springframework.http.converter.StringHttpMessageConverter">
+					<property name="supportedMediaTypes">
+						<list>
+							<value>text/html;charset=UTF-8</value>
+						</list>
+					</property>
+				</bean>
+			</list>
+		</property>
+	</bean>
+	<!-- 国际化配置 -->
+	<bean id="localeResolver"
+		class="org.springframework.web.servlet.i18n.SessionLocaleResolver">
+		<property name="defaultLocale" value="zh_CN" />
+	</bean>
+
+	<!-- 异常处理配置 -->
+	<bean id="exceptionResolver" class="com.biocome.base.mvc.handler.DwzExceptionResolver" />
+
+	<!-- 验证配置 -->
+	<bean id="validator"
+		class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean">
+		<property name="providerClass" value="org.hibernate.validator.HibernateValidator" />
+		<property name="validationMessageSource" ref="messageSource" />
+	</bean>
+
+	<!-- 转换器配置 -->
+	<bean id="conversionService" class="com.biocome.base.mvc.config.ConversionServiceFactoryBean" />
+
+	<mvc:view-controller path="/" view-name="forward:/index" />
+	<mvc:view-controller path="/500" view-name="/500" />
+	<mvc:view-controller path="/404" view-name="/404" />
+	<mvc:view-controller path="/403" view-name="/403" />
+
+	<mvc:default-servlet-handler />
+	<!-- 静态资源文件 -->
+	<mvc:resources mapping="/site/**"
+		location="classpath:/com/biocome/base/mvc/static/site/" />
+	<mvc:resources mapping="/ztree/**"
+		location="classpath:/com/biocome/base/mvc/static/ztree/" />
+	<mvc:resources mapping="/treetable/**"
+		location="classpath:/com/biocome/base/mvc/static/treetable/" />
+	<mvc:resources mapping="/highcharts/**"
+		location="classpath:/com/biocome/base/mvc/static/highcharts/" />
+	<mvc:resources mapping="/datepicker/**"
+		location="classpath:/com/biocome/base/mvc/static/datepicker/" />
+	<mvc:resources mapping="/std/**"
+		location="classpath:/com/biocome/base/mvc/static/dwz/std/" />
+	<mvc:resources mapping="/dwz/**"
+		location="classpath:/com/biocome/base/mvc/static/dwz/dwz/" />
+	<mvc:resources mapping="/fix/**"
+		location="classpath:/com/biocome/base/mvc/static/dwz/fix/" />
+	<mvc:annotation-driven conversion-service="conversionService" />
+
+	<context:component-scan base-package="com.biocome.base" />
+</beans>

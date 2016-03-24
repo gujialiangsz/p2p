@@ -1,0 +1,750 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*滚动条美化*/
+::-webkit-scrollbar {
+	height: 11px;
+	width: 11px
+}
+
+::-webkit-scrollbar-button {
+	height: 0;
+	width: 0
+}
+
+::-webkit-scrollbar-button:start:decrement, ::-webkit-scrollbar-button:end:increment
+	{
+	display: block
+}
+
+::-webkit-scrollbar-button:vertical:start:increment, ::-webkit-scrollbar-button:vertical:end:decrement
+	{
+	display: none
+}
+
+::-webkit-scrollbar-track:vertical, ::-webkit-scrollbar-track:horizontal,
+	::-webkit-scrollbar-thumb:vertical, ::-webkit-scrollbar-thumb:horizontal,
+	::-webkit-scrollbar-track:vertical, ::-webkit-scrollbar-track:horizontal,
+	::-webkit-scrollbar-thumb:vertical, ::-webkit-scrollbar-thumb:horizontal
+	{
+	border-style: solid;
+	border-color: transparent
+}
+
+::-webkit-scrollbar-track:vertical::-webkit-scrollbar-track:horizontal {
+	background-clip: padding-box;
+	background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+	-webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .1), inset 0 -1px 0
+		rgba(0, 0, 0, .07);
+	background-clip: padding-box;
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, .2);
+	min-height: 28px;
+	padding-top: 100
+}
+
+::-webkit-scrollbar-thumb:hover {
+	-webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, .25);
+	background-color: rgba(0, 0, 0, .4)
+}
+
+::-webkit-scrollbar-thumb:active {
+	-webkit-box-shadow: inset 1px 1px 3px rgba(0, 0, 0, .35);
+	background-color: rgba(0, 0, 0, .5)
+}
+
+::-webkit-scrollbar-track:vertical, ::-webkit-scrollbar-track:horizontal,
+	::-webkit-scrollbar-thumb:vertical, ::-webkit-scrollbar-thumb:horizontal
+	{
+	border-width: 0;
+}
+
+::-webkit-scrollbar-track:hover {
+	-webkit-box-shadow: inset 1px 0 0 rgba(0, 0, 0, .1);
+	background-color: rgba(0, 0, 0, .05)
+}
+
+::-webkit-scrollbar-track:active {
+	-webkit-box-shadow: inset 1px 0 0 rgba(0, 0, 0, .14), inset -1px -1px 0
+		rgba(0, 0, 0, .07);
+	background-color: rgba(0, 0, 0, .05)
+}
+
+.condition_header {
+	width: 1550px;
+}
+
+.condition_header select {
+	width: 100px;
+}
+
+.arrange_condition {
+	width: 235px;
+	float: left;
+	height: 146px;
+	border: 1px solid #ccc;
+	box-shadow: 1px 1px 3px #ccc;
+	padding: 5px 10px;
+	border-radius: 2px;
+}
+
+.arrange_condition p {
+	width: 310px;
+}
+
+.arrange_condition p label {
+	width: 80px;
+	font-size: 14px;
+}
+
+.arrange_condition p input[type="text"] {
+	width: 130px;
+}
+
+.arrange_condition p button {
+	margin-right: 10px;
+}
+
+.arrange_filmList {
+	width: 400px;
+	overflow: auto;
+	position: relative;
+	float: left;
+	height: 156px;
+	border: 1px solid #ccc;
+	margin-left: 10px;
+	box-shadow: 1px 1px 3px #ccc;
+	border-radius: 2px;
+}
+
+.arrange_filmList table td {
+	text-indent: 10px;
+}
+
+.arrange_filmList .gridCol {
+	text-indent: 10px;
+}
+
+.film_info {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px;
+	width: 150px;
+	background: #f3ede4;
+	box-shadow: 1px 1px 5px #333;
+}
+
+.arrange_pricepolicy {
+	width: 370px;
+	float: left;
+	height: 146px;
+	border: 1px solid #ccc;
+	padding: 5px 10px;
+	margin-left: 10px;
+	box-shadow: 1px 1px 3px #ccc;
+	border-radius: 2px;
+}
+
+.width_95 {
+	width: 95px;
+}
+
+.width_70 {
+	width: 70px;
+}
+
+.width_110 {
+	width: 110px;
+}
+
+.arrange_pricepolicy p label.width_95 {
+	width: 95px;
+}
+
+.arrange_pricepolicy p label.width_70 {
+	width: 70px;
+}
+
+.arrange_pricepolicy p {
+	padding: 2px;
+	width: 400px;
+}
+
+.arrange_pricepolicy p label input {
+	margin-right: 5px;
+}
+
+.arrange_pricepolicy p>a {
+	position: relative;
+	top: 6px;
+	left: 10px;
+}
+
+.arrange_pricepolicy p>a:hover {
+	color: #27A9E3;
+}
+
+.arrange_pricepolicy input[type="text"] {
+	height: 18px;
+	line-height: 18px;
+	float: none;
+}
+
+.arrange_sell_type {
+	width: 150px;
+	float: left;
+	height: 146px;
+	border: 1px solid #ccc;
+	padding: 5px 10px;
+	margin-left: 10px;
+	box-shadow: 1px 1px 3px #ccc;
+	border-radius: 2px;
+}
+
+.arrange_sell_type>div {
+	height: 100%;
+	padding-right: 20px;
+	overflow: auto;
+}
+
+.arrange_sell_type p {
+	width: 100%;
+	padding: 2px;
+}
+
+.arrange_sell_type p:first {
+	padding: 0;
+}
+
+.auto_arrange {
+	width: 250px;
+	float: left;
+	height: 146px;
+	border: 1px solid #ccc;
+	padding: 5px 10px;
+	margin-left: 10px;
+	box-shadow: 1px 1px 3px #ccc;
+	border-radius: 2px;
+}
+
+.auto_arrange p {
+	width: 100%;
+}
+
+.auto_arrange p label.width_95 {
+	width: 95px;
+}
+
+.auto_arrange p label.width_70 {
+	width: 70px;
+}
+
+.film_arrange {
+	width: 1550px;
+	min-width: 1550px;
+	overflow: auto;
+	position: relative;
+	border-left: 1px solid #ccc;
+	background: #F6F6F6;
+}
+
+.arrange_header {
+	width: 1550px;
+	border-bottom: 1px solid #ccc;
+	background: #eee;
+}
+
+.date_hall {
+	width: 90px;
+	height: 60px;
+	background: url(../images/date_hall.png) no-repeat;
+}
+
+.time_ruler {
+	position: absolute;
+	left: 90px;
+	top: 0;
+	height: 60px;
+	width: 1441px;
+	float: left;
+}
+
+.time_ruler div {
+	position: absolute;
+	width: 1px;
+	background: #999;
+	bottom: 0;
+	left: 0;
+}
+
+.long_line {
+	height: 22px;
+}
+
+.first_line {
+	height: 60px;
+}
+
+.middle_line {
+	height: 15px;
+}
+
+.short_line {
+	height: 10px;
+}
+
+.hour_list {
+	width: 1440px;
+	position: absolute;
+	background: none;
+	top: 15px;
+	left: 10px;
+}
+
+.hour_list li {
+	float: left;
+	margin-left: 40px;
+	padding: 0;
+	width: 20px;
+	text-align: center;
+	font-size: 13px;
+}
+
+.drag_area {
+	width: 1530px;
+	overflow: hidden;
+	border-right: 1px solid #ccc;
+	position: relative;
+}
+
+.hall_arrange {
+	width: 1530px;
+	height: 75px;
+	border-bottom: 1px solid #ccc;
+	position: relative;
+}
+
+.hall_name {
+	width: 90px;
+	height: 75px;
+	background: #eee;
+	border-right: 1px solid #ccc;
+}
+
+.hall_name h3 {
+	font-size: 13px;
+	font-weight: bold;
+	color: #333;
+	padding: 5px 0 0 10px;
+	width: 80px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.operate_icon {
+	margin-top: 12px;
+	margin-left: 5px;
+	position: relative;
+}
+
+.operate_icon a {
+	display: inline-block;
+	height: 22px;
+	width: 22px;
+	line-height: 22px;
+}
+
+.operate_icon a.arrange_copy {
+	background: url(../images/a_op1.png) no-repeat;
+}
+
+.operate_icon a.arrange_delete {
+	background: url(../images/a_delete.png) no-repeat;
+}
+
+.operate_icon a.arrange_change {
+	background: url(../images/a_op3.png) no-repeat;
+}
+
+.sold_info {
+	margin-top: 5px;
+	text-indent: 7px;
+}
+
+.film_list {
+	background: #ddd;
+	width: 1439px;
+	height: 75px;
+	position: absolute;
+	top: 0;
+	left: 91px;
+}
+
+.focus_color {
+	background: #fff;
+}
+
+.filmInfo_area {
+	position: absolute;
+	top: 2px;
+	background: #FC3;
+	border-radius: 3px;
+	cursor: default;
+	z-index: 5;
+	opacity: 0.9;
+}
+
+.filmInfo_area p {
+	width: auto;
+	display: block;
+	padding: 0;
+	float: none;
+	height: 18px;
+	line-height: 18px;
+	color: #fff;
+	text-indent: 5px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 95%;
+}
+
+.filmInfo_area ul {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+	display: none;
+}
+
+.filmInfo_area:hover ul {
+	display: block;
+	cursor: pointer;
+}
+
+.filmInfo_area ul li {
+	width: 25px;
+	height: 21px;
+	margin-top: 1px;
+}
+
+.filmInfo_area ul li.f_del {
+	background: url(../images/del.png) no-repeat center center;
+	background-size: 90% 90%;
+}
+
+.filmInfo_area ul li.f_mod {
+	background: url(../images/mod.png) no-repeat center center;
+	background-size: 90% 90%;
+}
+
+.filmInfo_area ul li.f_handle {
+	background: url(../images/handle.png) no-repeat center center;
+	background-size: 90% 90%;
+}
+
+#move_film {
+	background: #5FCBFA;
+	border-radius: 5px;
+	box-shadow: 0 0 4px #333;
+	position: absolute;
+	z-index: 999;
+}
+
+#move_film p {
+	width: auto;
+	display: block;
+	padding: 0;
+	float: none;
+	height: 18px;
+	line-height: 18px;
+	color: #000;
+	text-indent: 5px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 95%;
+}
+
+#y_coord {
+	width: 1px;
+	height: 100%;
+	background: #000;
+	position: absolute;
+	top: 0;
+	z-index: 999;
+	left: 100px;
+	display: none;
+}
+
+#time_area {
+	position: absolute;
+	color: #000;
+	text-shadow: 1px 1px 1px #fff;
+	z-index: 999;
+	font-size: 13px;
+	font-weight: bold;
+	display: none;
+}
+
+#system_time {
+	position: absolute;
+	width: 1px;
+	background: #630;
+	left: 0;
+	top: 0;
+	height: 100%;
+	z-index: 7;
+	display: none;
+}
+
+.lc_color {
+	box-shadow: 0 0 10px #f00;
+}
+
+/*底部按钮*/
+.formBar ul.opera_btns {
+	float: left;
+}
+
+.formBar ul.opera_btns .combox {
+	float: none;
+	display: inline-block;
+}
+
+.formBar ul.opera_btns li {
+	line-height: 26px;
+}
+
+.continuous_info em {
+	font-size: 13px;
+	font-style: normal;
+}
+
+/*图例*/
+.legends {
+	padding: 0 20px;
+}
+
+.legends td {
+	padding: 10px;
+	font-size: 14px;
+}
+
+.legends td.letter {
+	padding: 10px 0 10px 20px;
+}
+
+.legends div {
+	width: 100px;
+	height: 60px;
+	border-radius: 4px;
+}
+/*0已保存，1待审核，2已审核，3可销售，4销售中，5停售，6放映结束，7已上报'*/
+.no_save {
+	background-color: #D6A100;
+}
+
+.unsubmit {
+	background-color: #8B9C10;
+	cursor: move;
+}
+
+.unchecked {
+	background-color: #d69144;
+}
+
+.checked {
+	background-color: #d65e45;
+}
+
+.salecheck {
+	background-color: #03F;
+}
+
+.saleing {
+	background-color: #459bd8;
+}
+
+.salestop {
+	background-color: #d743a1;
+}
+
+.planend {
+	background-color: gray;
+}
+
+.reported {
+	background-color: #8a45d6;
+}
+
+.forbid {
+	background: #f00;
+}
+
+/*替换*/
+.th_clone {
+	opacity: 0.5;
+	position: fixed;
+	left: 0;
+	z-index: 99;
+	top: 100px;
+	background: #666;
+}
+
+.th_clone .hall_name {
+	background: none;
+	border-color: #666;
+}
+
+.th_clone .film_list {
+	background: none;
+}
+
+.copy_clone {
+	opacity: 0.7;
+	position: fixed;
+	left: 0;
+	z-index: 99;
+	top: 100px;
+	border: none;
+}
+
+.copy_clone .hall_name {
+	background: none;
+	border: none;
+}
+
+.copy_clone .film_list {
+	background: none;
+	border: none;
+}
+
+.copy_clone .filmInfo_area {
+	cursor: default;
+}
+
+/*禁止编辑*/
+#ban_edit {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: #27A9E3;
+	z-index: 8;
+	opacity: 0.1;
+}
+
+/*放映计划顶部*/
+.ribbon {
+	display: inline-block;
+	margin-top: 10px;
+	height: 45px;
+	overflow: hidden;
+	width: 100%;
+	text-align: center;
+	padding: 0 7px;
+}
+
+.ribbon:after, .ribbon:before {
+	margin-top: 0.5em;
+	content: "";
+	float: left;
+	border: 1.5em solid #ccc;
+}
+
+.ribbon:after {
+	border-right-color: transparent;
+}
+
+.ribbon:before {
+	border-left-color: transparent;
+}
+
+.ribbon a:link, .ribbon a:visited {
+	color: #000;
+	text-decoration: none;
+	float: left;
+	height: 3.5em;
+	overflow: hidden;
+}
+
+.ribbon span {
+	background: #ccc;
+	display: inline-block;
+	line-height: 3em;
+	font-weight: bold;
+	padding: 0 1em;
+	margin-top: 0.5em;
+	position: relative;
+	-webkit-transition: background-color 0.2s, margin-top 0.2s;
+	/* Saf3.2+, Chrome */
+	-moz-transition: background-color 0.2s, margin-top 0.2s; /* FF4+ */
+	-ms-transition: background-color 0.2s, margin-top 0.2s; /* IE10 */
+	-o-transition: background-color 0.2s, margin-top 0.2s;
+	/* Opera 10.5+ */
+	transition: background-color 0.2s, margin-top 0.2s;
+}
+
+.ribbon a:hover span, .ribbon a.jhover span {
+	background: #27A9E3;
+	color: #fff;
+	margin-top: 0;
+}
+
+.ribbon span:before {
+	content: "";
+	position: absolute;
+	top: 3em;
+	left: 0;
+	border-right: 0.5em solid #1392CA;
+	border-bottom: 0.5em solid #fff;
+}
+
+.ribbon span:after {
+	content: "";
+	position: absolute;
+	top: 3em;
+	right: 0;
+	border-left: 0.5em solid #1392CA;
+	border-bottom: 0.5em solid #fff;
+}
+
+.div_precision {
+	width: auto;
+	height: auto;
+	float: left;
+	display: inline-block;
+	padding-right: 20px;
+}
+
+.div_precision select {
+	position: relative;
+	top: 1px;
+}
+
+.schedule_ul a, .schedule_ul button {
+	padding: 9px 25px;
+}
+
+/*特价图标*/
+.special {
+	padding: 1px 4px;
+	height: 20px;
+	background: url(../images/special.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	right: -14px;
+	top: 0px;
+	font-size: 12px;
+	font-style: normal;
+	color: #fff;
+	text-align: center;
+	line-height: 16px;
+}

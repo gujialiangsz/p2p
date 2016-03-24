@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<!-- 数据库设置 -->
+	<entry key="db.url">jdbc:mysql://192.168.3.115:3306/smartwatch?characterEncoding=UTF-8</entry>
+	<entry key="db.username">tiggerfish</entry>
+	<entry key="db.password">atlastf</entry>
+	<entry key="db.maxActive">100</entry>
+	<entry key="db.minIdle">10</entry>
+	<entry key="db.initialSize">10</entry>
+	<entry key="db.dialect">org.hibernate.dialect.MySQL5Dialect</entry>
+	<entry key="db.show_sql">true</entry>
+	<entry key="db.cache.use_query_cache">true</entry>
+	<entry key="db.testOnReturn">true</entry>
+	<entry key="db.testOnBorrow">true</entry>
+	<entry key="db.poolPreparedStatements">true</entry>
+	<entry key="db.maxPoolPreparedStatementPerConnectionSize">100</entry>
+	
+	<!-- 上传临时目录 -->
+	<entry key="upload.dir">/upload/</entry>
+	<!-- 上传文件校验 -->
+	<entry key="file.valid">^[a-zA-Z0-9\u4E00-\u9FA5]+[_][\d\.]+[_][1-9]{1}[\d]*[\.](hex|apk|ios|ipa|APK|HEX|IOS|IPA|bin|BIN)$</entry>
+	<entry key="file.case">appname_1.0.0_001.apk</entry>
+	<entry key="file.last">Biocome_lastVersion.apk</entry>
+	<entry key="interface.tokenUrl">http://112.74.215.155:9090/rest?service=cn.tgfish.App.getToken</entry>
+	<entry key="interface.configUrl">http://112.74.215.155:9090/rest?service=cn.tgfish.App.interfaceCfg</entry>
+	<entry key="oss.Url">http://192.168.3.115:8060/woss/system/interface-getConfig</entry>
+	<!-- 客户端显示 -->
+	<entry key="monitor.websocket.url">192.168.3.115:8060/woss/websocket/monitor/11/</entry>
+	<entry key="sms.url">https://api.qingmayun.com/20150822/SMS/templateSMS?</entry>
+	<entry key="sms.account.sid">e0e3b25b55e546d1b203c5be790312e8</entry>
+	<entry key="sms.account.token">51b9556016834eeab5f26cbb1cbcccb6</entry>
+	<entry key="sms.appid">58c56d5b4ea54c5985e6912b0052effa</entry>
+	<entry key="sms.templateid">19730156</entry>
+	<entry key="msg.debug">true</entry>
+</properties>

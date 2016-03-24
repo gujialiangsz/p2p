@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<!-- 通用 -->
+	<entry key="edit.success">编辑成功。</entry>
+    <entry key="add.success">新增成功。</entry>
+    <entry key="update.success">修改成功。</entry>
+    <entry key="enable.success">启用成功</entry>
+	<entry key="disable.success">停用成功</entry>
+	<entry key="delete.success">删除成功</entry>
+	<entry key="security.logout">退出系统。</entry>
+	<!-- 系统管理 -->
+	<entry key="organ.add.success">新增部门成功。</entry>
+	<entry key="organ.edit.success">编辑部门成功。</entry>
+	<entry key="organ.delete.success">删除部门成功。</entry>
+	<entry key="organ.exist">部门名[{0}]已存在。</entry>
+	<entry key="organ.delete.failed.root">顶级部门不能删除。</entry>
+	<entry key="organ.delete.failed.child">该部门含有子部门不可删除。</entry>
+	<entry key="organ.delete.failed.user">该部门含有关联用户不可删除。</entry>
+	<entry key="role.add.success">新增角色成功。</entry>
+	<entry key="role.edit.success">编辑角色成功。</entry>
+	<entry key="role.delete.success">删除角色成功</entry>
+	<entry key="role.delete.failed.user">该角色与用户已关联，不可删除</entry>
+	<entry key="user.add.success">新增用户成功。</entry>
+	<entry key="user.edit.success">编辑用户成功。</entry>
+	<entry key="user.delete.failed">该用户已登录，无法删除。</entry>
+	<entry key="userno.exist">员工号[{0}]已存在，同一名员工不能重复注册帐号。</entry>
+	<entry key="cardno.exist">卡号[{0}]已存在，同一卡号不能重复注册帐号。</entry>
+	<entry key="user.enable.success">启用用户成功。</entry>
+	<entry key="user.disable.success">禁用用户成功。</entry>
+	<entry key="user.pwd.reset.success">重置密码成功。</entry>
+	<entry key="user.delete.success">用户删除成功</entry>
+	<entry key="user.unique.error">帐号不唯一</entry>
+	<entry key="actor.add.success">新增职务成功。</entry>
+	<entry key="actor.update.success">编辑职务成功。</entry>
+	<entry key="actor.delete.success">删除职务成功。</entry>
+	<entry key="person.pwd.change.success">修改密码成功。</entry>
+	<entry key="baseDictType.add.success">新增字典类型成功。</entry>
+	<entry key="baseDictType.edit.success">编辑字典类型成功。</entry>
+	<entry key="baseDictType.delete.success">删除字典类型成功。</entry>
+	<entry key="baseDictType.dictCode.exist">字典类型已存在。</entry>
+	<entry key="baseDictType.dictName.exist">字典名称已存在。</entry>
+	<entry key="baseDictItem.add.success">新增元素成功。</entry>
+	<entry key="baseDictItem.edit.success">编辑元素成功。</entry>
+	<entry key="baseDictItem.delete.success">删除元素成功。</entry>
+	<entry key="baseDictItem.itemName.exist">元素名已存在。</entry>
+	<entry key="baseDictItem.itemValue.exist">元素值已存在。</entry>
+	<entry key="baseDictItem.itemValue.big">元素值太大。</entry>
+	<entry key="employee.add.success">新增员工信息成功。</entry>
+	<entry key="employee.edit.success">编辑员工成功。</entry>
+	<entry key="employee.delete.success">删除员工信息成功。</entry>
+	<entry key="employee.number.exist">员工号已存在,请使用其他员工号。</entry>
+	<entry key="employee.stop.success">离职成功。</entry>
+</properties>

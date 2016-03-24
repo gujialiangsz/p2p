@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permissions>
+<!-- 系统管理(1-100) -->
+	<!-- 用户权限（2-30） -->
+	<permission-group name="用户角色" order="1">
+		<permission id="2" name="部门新增" code="BM_A" depends="" />
+		<permission id="3" name="部门编辑" code="BM_M" depends="" />
+		<permission id="4" name="部门查看" code="BM_V" depends="" />
+		<permission id="5" name="角色新增" code="JS_A" depends="" />
+		<permission id="6" name="角色编辑" code="JS_M" depends="" />
+		<permission id="7" name="角色查看" code="JS_V" depends="" />
+		<permission id="8" name="用户新增" code="YH_A" depends="" />
+		<permission id="9" name="用户编辑" code="YH_M" depends="" />
+		<permission id="10" name="用户查看" code="YH_V" depends="" />
+		<permission id="11" name="员工新增" code="YG_A" depends="" />
+		<permission id="12" name="员工编辑" code="YG_M" depends="" />
+		<permission id="13" name="员工查看" code="YG_V" depends="" />
+	</permission-group>
+	<!-- 系统参数（41-60） -->
+	<permission-group name="系统参数" order="2">
+		<permission id="41" name="解析配置新增" code="JXPZ_A" depends="" />
+		<permission id="42" name="解析配置编辑" code="JXPZ_M" depends="" />
+		<permission id="43" name="解析配置查看" code="JXPZ_V" depends="" />
+		<permission id="44" name="数据参数新增" code="SJCS_A" depends="" />
+		<permission id="45" name="数据参数编辑" code="SJCS_M" depends="" />
+		<permission id="46" name="数据参数查看" code="SJCS_V" depends="" />
+		<permission id="47" name="接口配置新增" code="JKPZ_A" depends="" />
+		<permission id="48" name="接口配置编辑" code="JKPZ_M" depends="" />
+		<permission id="49" name="接口配置查看" code="JKPZ_V" depends="" />
+		<permission id="50" name="应用配置新增" code="YYPZ_A" depends="" />
+		<permission id="51" name="应用配置编辑" code="YYPZ_M" depends="" />
+		<permission id="52" name="应用配置查看" code="YYPZ_V" depends="" />
+		<permission id="53" name="应用版本新增" code="YYBB_A" depends="" />
+		<permission id="54" name="应用版本编辑" code="YYBB_M" depends="" />
+		<permission id="55" name="应用版本查看" code="YYBB_V" depends="" />
+	</permission-group>
+	<!-- 系统监控（61-70） -->
+	<permission-group name="系统监控" order="3">
+		<permission id="61" name="系统监控查看" code="XTJK_V" depends="" />
+		<permission id="62" name="系统监控编辑" code="XTJK_M" depends="" />
+		<permission id="63" name="日志查看" code="RZ_V" depends="" />
+	</permission-group>
+
+<!-- 数据管理(101-200) -->
+	<!-- 业务处理（101-120） -->
+	<permission-group name="业务处理" order="4">
+		<permission id="101" name="充值业务处理新增" code="CZYW_A" depends="" />
+		<permission id="102" name="充值业务处理编辑" code="CZYW_M" depends="" />
+		<permission id="103" name="充值业务处理查看" code="CZYW_V" depends="" />
+		<permission id="104" name="初始化业务处理新增" code="CSHYW_A" depends="" />
+		<permission id="105" name="初始化业务处理编辑" code="CSHYW_M" depends="" />
+		<permission id="106" name="初始化业务处理查看" code="CSHYW_V" depends="" />
+		<permission id="107" name="退卡销卡业务处理新增" code="TKXK_A" depends="" />
+		<permission id="108" name="退卡销卡业务处理编辑" code="TKXK_M" depends="" />
+		<permission id="109" name="退卡销卡业务处理新增查看" code="TKXK_V" depends="" />
+		<permission id="110" name="商户管理新增" code="SHGL_A" depends="" />
+		<permission id="111" name="商户管理编辑" code="SHGL_M" depends="" />
+		<permission id="112" name="商户管理查看" code="SHGL_V" depends="" />
+		<permission id="113" name="问题反馈编辑" code="WTFK_M" depends="" />
+		<permission id="114" name="问题反馈查看" code="WTFK_V" depends="" />
+	</permission-group>
+	<!-- 明细查询（121-140） -->
+	<permission-group name="明细查询" order="5">
+		<permission id="121" name="充值明细查看" code="CZMX_V" depends="" />
+		<permission id="122" name="初始化明细查看" code="CSHMX_V" depends="" />
+		<permission id="123" name="退卡销卡明细" code="TKXKMX_V" depends="" />
+		<permission id="124" name="消费明细查看" code="XFMX_V" depends="" />
+		<permission id="125" name="考勤明细查看" code="KQJL_V" depends="" />
+		<permission id="141" name="注册用户查看" code="ZCYH_V" depends="" />
+		<permission id="144" name="原始交易查看" code="YSJY_V" depends="" />
+	</permission-group>
+	<!-- 设备管理（121-140） -->
+	<permission-group name="明细查询" order="5">
+		<permission id="145" name="产品设备信息查看" code="SBXX_V" depends="" />
+		<permission id="146" name="产品设备信息编辑" code="SBXX_M" depends="" />
+		<permission id="147" name="考勤设备信息查看" code="KQSB_V" depends="" />
+		<permission id="148" name="考勤设备信息编辑" code="KQSB_M" depends="" />
+	</permission-group>
+	<!-- 对账管理（161-180） -->
+	<permission-group name="健康管理" order="6">
+		<permission id="161" name="心电数据查看" code="XDSJ_V" depends="" />
+	</permission-group>
+<!-- 报表管理(201-300) -->
+	<!-- 一卡通对账报表（201-220） -->
+	<permission-group name="一卡通对账报表" order="7">
+		<permission id="201" name="充值对账报表" code="CZDZBB_V" depends="" />
+		<permission id="202" name="初始化对账报表" code="CSHDZBB_V" depends="" />
+		<permission id="203" name="退卡销卡对账报表" code="TKXKDZBB_V" depends="" />
+	</permission-group>
+	<!-- 统计报表（221-240） -->
+	<permission-group name="统计报表" order="8">
+		<permission id="221" name="充值统计报表" code="CZTJBB_V" depends="" />
+		<permission id="222" name="初始化统计报表" code="CSHTJBB_V" depends="" />
+		<permission id="223" name="退卡销卡统计报表" code="TKXKTJBB_V" depends="" />
+		<permission id="224" name="财务收支统计报表" code="CWSZTJBB_V" depends="" />
+		<permission id="225" name="消费统计报表" code="XFTJBB_V" depends="" />
+	</permission-group>
+</permissions>
