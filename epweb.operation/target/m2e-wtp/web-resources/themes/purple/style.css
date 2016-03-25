@@ -1,0 +1,173 @@
+@charset "utf-8";
+
+body {
+	background: url(../images/body_bg3.jpg) no-repeat top left;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+
+/* TabsPage */
+.tabsPage .tabsPageContent {
+	border-color: #000;
+}
+
+.tabsPage .tabsPageHeader, .tabsPage .tabsPageHeader li, .tabsPage .tabsPageHeader li a,
+	.tabsPage .tabsPageHeader li span {
+	background-image: url(new_images/tabs/tabspage.png);
+}
+
+.tabsPage .tabsPageHeader li a {
+	color: #333;
+}
+
+.tabsPage .tabsPageHeader li .close, .tabsPage .tabsPageHeader li.hover .close,
+	.tabsPage .tabsPageHeader li.selected .close {
+	background-image: url(new_images/tabs/tabspage_icon.png);
+}
+
+/* Dialog */
+.dialog .dialogHeader, .dialog .dialogHeader_r, .dialog .dialogHeader_c,
+	.dialog .dialogFooter, .dialog .dialogFooter_r, .dialog .dialogFooter_c
+	{
+	background: none;
+}
+
+.dialog .dialogHeader h1 {
+	color: #000;
+}
+
+.dialog .dialogContent {
+	background: none;
+	border-collapse: #000;
+}
+
+/* Accordion */
+.accordion {
+	background: none;
+}
+
+/* Grid */
+.panelBar {
+	border-color: #ccc;
+}
+
+.grid .gridThead .gridCol {
+	color: #000;
+}
+
+.grid .gridTbody .selected {
+	background: #27A9E3;
+	color: #fff;
+}
+
+.grid {
+	background: none;
+}
+
+.grid .gridThead .gridCol {
+	text-align: center;
+}
+
+/* Tree */
+.tree .selected {
+	background: none;
+}
+
+.tree ul {
+	background: none;
+}
+
+.tree div div {
+	background-image: url(new_images/tree/tree.png);
+}
+
+.tree .folder_collapsable, .tree .folder_expandable, .tree .file {
+	background-image: url(new_images/tree/folder.png);
+}
+
+/* ----------------------------------------------------------------- Form */
+/* TextInput */
+input.required, textarea.required {
+	border-color: #ccc;
+	background-color: none;
+	background: url(new_images/form/input_bg.png) no-repeat 100% 0;
+}
+
+.textInput, .textArea {
+	border-color: #ccc;
+	color: #000;
+	height: 22px;
+	line-height: 22px;
+	text-indent: 5px;
+	width: 204px;
+	background: none;
+}
+
+input.short {
+	width: 100px;
+}
+
+.jumpto .textInput {
+	height: 15px;
+	line-height: 15px;
+}
+
+input.focus, textarea.focus {
+	border-color: #22ade6;
+	box-shadow: 0 0 7px #22ade6;
+}
+
+input.focus {
+	background: none;
+}
+
+.buttonDisabled .buttonContent {
+	background: url(new_images/btn_off.png) no-repeat;
+}
+
+/*combox
+.combox, .combox div, .combox div a { background-image:url(new_images/search-bg.gif); }*/
+
+/* ----------------------------------------------------------------- Pages */
+/* Layout */
+#splitBar {
+	background: none;
+}
+
+#header, #header .headerNav {
+	background: none;
+}
+
+#header {
+	background: none;
+}
+
+#header .nav li {
+	background: none;
+}
+
+#header .nav li a {
+	color: #fff;
+}
+
+/* Pages dialog */
+.dialog .pageContent .pageFormContent {
+	border-color: #000;
+}
+
+.page .pageHeader, .formBar {
+	background: url(new_images/shadow_bg.png) repeat;
+	border-color: #666;
+}
+
+.inputButton, .inputDateButton {
+	background-image: url(new_images/form/input_bt.png);
+}
+
+.inputDateButton {
+	position: relative;
+	left: -23px;
+	top: 2px;
+	height: 24px;
+	width: 24px;
+}

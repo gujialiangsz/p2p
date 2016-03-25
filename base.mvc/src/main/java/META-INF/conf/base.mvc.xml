@@ -7,7 +7,7 @@
 	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
 	http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd">
 	<!-- Freemarker配置 -->
-	<bean id="freemarkerConfigurer" class="com.biocome.base.mvc.config.FreeMarkerConfigurer">
+	<bean id="freemarkerConfigurer" class="com.qiushui.base.mvc.config.FreeMarkerConfigurer">
 		<property name="defaultEncoding" value="${freemarker.encoding:UTF-8}" />
 		<property name="freemarkerSettings">
 			<props>
@@ -52,8 +52,8 @@
 		</property>
 		<property name="defaultViews">
 			<list>
-				<bean class="com.biocome.base.mvc.handler.GenericXStreamView" />
-				<bean class="com.biocome.base.mvc.handler.GenericJacksonView" />
+				<bean class="com.qiushui.base.mvc.handler.GenericXStreamView" />
+				<bean class="com.qiushui.base.mvc.handler.GenericJacksonView" />
 			</list>
 		</property>
 	</bean>
@@ -78,7 +78,7 @@
 	</bean>
 
 	<!-- 异常处理配置 -->
-	<bean id="exceptionResolver" class="com.biocome.base.mvc.handler.DwzExceptionResolver" />
+	<bean id="exceptionResolver" class="com.qiushui.base.mvc.handler.DwzExceptionResolver" />
 
 	<!-- 验证配置 -->
 	<bean id="validator"
@@ -88,7 +88,7 @@
 	</bean>
 
 	<!-- 转换器配置 -->
-	<bean id="conversionService" class="com.biocome.base.mvc.config.ConversionServiceFactoryBean" />
+	<bean id="conversionService" class="com.qiushui.base.mvc.config.ConversionServiceFactoryBean" />
 
 	<mvc:view-controller path="/" view-name="forward:/index" />
 	<mvc:view-controller path="/500" view-name="/500" />
@@ -98,22 +98,22 @@
 	<mvc:default-servlet-handler />
 	<!-- 静态资源文件 -->
 	<mvc:resources mapping="/site/**"
-		location="classpath:/com/biocome/base/mvc/static/site/" />
+		location="classpath:/com/qiushui/base/mvc/static/site/" />
 	<mvc:resources mapping="/ztree/**"
-		location="classpath:/com/biocome/base/mvc/static/ztree/" />
+		location="classpath:/com/qiushui/base/mvc/static/ztree/" />
 	<mvc:resources mapping="/treetable/**"
-		location="classpath:/com/biocome/base/mvc/static/treetable/" />
+		location="classpath:/com/qiushui/base/mvc/static/treetable/" />
 	<mvc:resources mapping="/highcharts/**"
-		location="classpath:/com/biocome/base/mvc/static/highcharts/" />
+		location="classpath:/com/qiushui/base/mvc/static/highcharts/" />
 	<mvc:resources mapping="/datepicker/**"
-		location="classpath:/com/biocome/base/mvc/static/datepicker/" />
+		location="classpath:/com/qiushui/base/mvc/static/datepicker/" />
 	<mvc:resources mapping="/std/**"
-		location="classpath:/com/biocome/base/mvc/static/dwz/std/" />
+		location="classpath:/com/qiushui/base/mvc/static/dwz/std/" />
 	<mvc:resources mapping="/dwz/**"
-		location="classpath:/com/biocome/base/mvc/static/dwz/dwz/" />
+		location="classpath:/com/qiushui/base/mvc/static/dwz/dwz/" />
 	<mvc:resources mapping="/fix/**"
-		location="classpath:/com/biocome/base/mvc/static/dwz/fix/" />
+		location="classpath:/com/qiushui/base/mvc/static/dwz/fix/" />
 	<mvc:annotation-driven conversion-service="conversionService" />
 
-	<context:component-scan base-package="com.biocome.base" />
+	<context:component-scan base-package="com.qiushui.base" />
 </beans>

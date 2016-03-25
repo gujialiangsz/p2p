@@ -10,7 +10,7 @@
 	<!-- Shiro配置 -->
 	<bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor" />
 	<bean id="realmCacheManager" class="org.apache.shiro.cache.MemoryConstrainedCacheManager" />
-	<bean id="loginRealm" class="com.biocome.base.security.service.LoginRealm">
+	<bean id="loginRealm" class="com.qiushui.base.security.service.LoginRealm">
 		<property name="cacheManager" ref="realmCacheManager" />
 	</bean>
 	<bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
@@ -23,11 +23,11 @@
 		<property name="successUrl" value="/" />
 	</bean>
 	<!-- 加载ResourceEntity切面 -->
-	<bean id="resourceEntityAspect" class="com.biocome.base.security.aspect.ResourceEntityAspect" />
+	<bean id="resourceEntityAspect" class="com.qiushui.base.security.aspect.ResourceEntityAspect" />
 	<!-- 加载日志切面 -->
-	<bean id="logsAspect" class="com.biocome.base.security.aspect.LogAspect" />
+	<bean id="logsAspect" class="com.qiushui.base.security.aspect.LogAspect" />
 	<!-- 安全相关异常处理配置 -->
-	<bean id="exceptionResolver" class="com.biocome.base.security.handler.DwzSecurityExceptionResolver">
+	<bean id="exceptionResolver" class="com.qiushui.base.security.handler.DwzSecurityExceptionResolver">
 		<property name="exceptionMappings">
 			<map>
 				<entry key="org.apache.shiro.authz.UnauthenticatedException"
@@ -40,6 +40,6 @@
 
 	<!-- 自定义权限注解拦截器配置 -->
 	<mvc:interceptors>
-		<bean class="com.biocome.base.security.interceptor.AuthInterceptor" />
+		<bean class="com.qiushui.base.security.interceptor.AuthInterceptor" />
 	</mvc:interceptors>
 </beans>

@@ -3,7 +3,7 @@ Implementation-Title: clearing.operation
 Implementation-Version: 0.0.1-SNAPSHOT
 Built-By: lenovo001!
 Specification-Title: clearing.operation
-Implementation-Vendor-Id: com.biocome
+Implementation-Vendor-Id: com.qiushui
 Created-By: Apache Maven 3.3.3
 Build-Jdk: 1.8.0_45
 Specification-Version: 0.0.1-SNAPSHOT

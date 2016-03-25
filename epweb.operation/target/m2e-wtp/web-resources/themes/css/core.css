@@ -1,0 +1,1315 @@
+@charset "utf-8";
+
+/* Core Code */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+	blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
+	em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup,
+	tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
+	caption, tbody, tfoot, thead, tr, th, td {
+	font-family: Microsoft Yahei, Arial, sans-serif;
+	-moz-user-select: none;
+}
+
+* {
+	font-family: Microsoft Yahei, Arial, sans-serif;
+}
+
+.clear {
+	clear: both;
+	content: " ";
+	display: block;
+	font-size: 0;
+	height: 0;
+	visibility: hidden;
+}
+
+select {
+	border: 1px solid #ccc;
+	padding: 3px 2px 2px 5px;
+	position: relative;
+	top: -2px;
+}
+
+select option {
+	height: 25px;
+	line-height: 25px;
+}
+
+.pageContent {
+	background: none;
+}
+
+input[type="checkbox"] {
+	position: relative;
+	top: 2px;
+	margin-right: 5px;
+}
+
+/*header*/
+.searchBar {
+	padding: 10px 0 0 10px;
+}
+
+.searchBar ul.searchContent li {
+	padding: 5px 0;
+	height: auto;
+	min-width: 310px;
+	width: auto;
+}
+
+.searchBar ul.searchContent {
+	height: auto;
+}
+
+.searchBar label {
+	line-height: 28px;
+}
+
+.searchBar .textInput, .searchBar .textArea {
+	float: left;
+}
+
+.page .searchBar label {
+	color: #333;
+	font-size: 13px;
+}
+
+.page .searchBar .subBar li input {
+	margin-top: 0;
+}
+
+/* Tabs */
+.tabsPage .tabsPageHeader {
+	height: 32px;
+	border: none;
+	background: none;
+	background-position: 0 -450px;
+	background-repeat: repeat-x;
+}
+
+.tabsPage .tabsPageHeaderContent {
+	height: 32px;
+}
+
+.tabsPage .tabsPageHeader ul, .tabsPage .tabsPageHeader li {
+	height: 31px;
+}
+
+.tabsPage .tabsPageHeader li a {
+	height: 28px;
+	line-height: 27px;
+}
+
+.tabsPage .tabsPageHeader li span {
+	height: 27px;
+	line-height: 24px;
+	font-size: 14px;
+}
+
+.tabsPage .tabsPageContent {
+	border: none;
+}
+
+/* Dialog */
+.dialog {
+	background: #ddd;
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px #000;
+	border-radius: 6px;
+}
+
+.dialog .dialogHeader h1 {
+	padding: 2px 5px 0 10px;
+	font-size: 14px;
+	background: none;
+	background-position: 0 0;
+}
+
+.dialog .dialogContent {
+	padding: 5px 5px 2px 6px;
+	border: none;
+}
+
+/* Accordion */
+.accordion {
+	border: none;
+}
+
+.accordion .accordionContent {
+	overflow: hidden;
+	border: none;
+}
+
+/* Grid */
+.grid .gridTbody td div {
+	height: 25px;
+	line-height: 25px;
+	text-align: left;
+	text-indent: 5px;
+	text-overflow: ellipsis;
+}
+
+.grid .gridTbody td.center div {
+	text-align: center;
+	text-indent: 0;
+}
+
+.grid .gridCol {
+	height: 25px;
+	line-height: 25px;
+	font-weight: bold;
+}
+
+/* Button */
+.button, .buttonActive, .buttonDisabled {
+	height: 28px;
+	padding-left: 0;
+	background: none;
+}
+
+.buttonActive .buttonContent, .buttonDisabled .buttonContent {
+	height: 28px;
+	line-height: 28px;
+}
+
+.button .buttonContent {
+	padding: 0;
+	background-position: 0 0;
+}
+
+.buttonHover {
+	padding-left: 0;
+	background-position: 0 0;
+}
+
+.buttonHover .buttonContent {
+	padding: 0;
+	background-position: 0 0;
+}
+
+.buttonActive .buttonContent {
+	padding: 0;
+	background-position: 0 0;
+}
+
+.buttonActiveHover .buttonContent {
+	padding: 0;
+	background-position: 0 0;
+}
+
+.button button, .buttonActive button, .buttonDisabled button {
+	background: url(../default/../images/btn_off.png) no-repeat;
+	background-size: 100% 100%;
+	min-width: 81px;
+	line-height: 26px;
+	height: 26px;
+	margin: 0;
+	border: 0;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000;
+	cursor: pointer;
+	padding: 0;
+}
+
+.buttonActiveHover button, .button button:hover {
+	background: url(../default/../images/btn_on.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.button:hover {
+	text-decoration: none;
+	background: none;
+}
+
+.button:hover span {
+	background: none;
+}
+
+.buttonHover {
+	background: none;
+}
+
+.buttonHover .buttonContent {
+	background: none;
+}
+
+.a_button {
+	background: url(../default/../images/btn_off.png) no-repeat;
+	background-size: 100% 100%;
+	min-width: 81px;
+	line-height: 26px;
+	height: 26px;
+	margin: 0;
+	border: none;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000;
+	cursor: pointer;
+	text-align: center;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.a_button:hover {
+	background: url(../default/../images/btn_on.png) no-repeat;
+	background-size: 100% 100%;
+	text-decoration: none;
+}
+
+/* ----------------------------------------------------------------- Pages */
+/* Layout */
+#header {
+	height: 85px;
+}
+
+#leftside {
+	top: 85px;
+}
+
+#sidebar {
+	width: 230px;
+	left: 0;
+}
+
+#container {
+	top: 88px;
+	left: 238px;
+	border: 1px solid #999;
+	opacity: 0.9;
+}
+
+#splitBar {
+	width: 8px;
+	top: 85px;
+	left: 230px;
+}
+
+#splitBarProxy {
+	width: 8px;
+	top: 85px;
+	left: 230px;
+}
+
+#footer {
+	height: 23px;
+}
+
+#header .headerNav {
+	height: 85px;
+}
+
+#header .nav {
+	top: 55px;
+}
+
+#header .themeList {
+	top: -80px;
+	background: url(../default/../images/shadow_bg.png) repeat;
+	padding: 5px;
+	border: 1px solid #fff;
+	border-radius: 6px;
+	box-shadow: 0 0 5px #000;
+	display: none;
+}
+
+#header .themeList li div {
+	padding: 1px;
+	width: 80px;
+	height: 55px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+#header .themeList li.default div {
+	background-image: url(../default/../images/body_bg1.jpg);
+}
+
+#header .themeList li.default .selected {
+	border: 1px solid #bbb;
+	box-shadow: 0 0 2px #000;
+	padding: 0;
+	background-position: 0 0;
+}
+
+#header .themeList li.green  div {
+	background-image: url(../default/../images/body_bg2.jpg);
+	background-position: 0 0;
+}
+
+#header .themeList li.green .selected {
+	border: 1px solid #bbb;
+	box-shadow: 0 0 2px #000;
+	padding: 0;
+	background-position: 0 0;
+}
+
+#header .themeList li.red .selected {
+	border: 1px solid #bbb;
+	box-shadow: 0 0 2px #000;
+	padding: 0;
+	background-position: 0 0;
+}
+
+#header .themeList li.purple  div {
+	background-image: url(../default/../images/body_bg3.jpg);
+	background-position: 0 0;
+}
+
+#header .themeList li.purple .selected {
+	border: 1px solid #bbb;
+	box-shadow: 0 0 2px #00;
+	padding: 0;
+	background-position: 0 0;
+}
+
+#header .themeList li.silver  div {
+	background-image: url(../default/../images/body_bg4.jpg);
+	background-position: 0 0;
+}
+
+#header .themeList li.silver .selected {
+	border: 1px solid #bbb;
+	box-shadow: 0 0 2px #00;
+	padding: 0;
+	background-position: 0 0;
+}
+
+#header .themeList li.azure  div {
+	background-image: url(../default/../images/body_bg5.jpg);
+	background-position: 0 0;
+}
+
+#header .themeList li.azure .selected {
+	border: 1px solid #bbb;
+	box-shadow: 0 0 2px #000;
+	padding: 0;
+	background-position: 0 0;
+}
+
+/* Pages default */
+.pageHeader {
+	background: #fff;
+	margin-bottom: 0;
+	border: 0;
+}
+
+.pageFormContent p {
+	height: 26px;
+	white-space: nowrap;
+}
+
+.pageFormContent label {
+	line-height: 26px;
+	text-align: right;
+	white-space: nowrap;
+}
+
+.pageFormContent label.tLeft {
+	text-align: left;
+}
+
+.role_set label {
+	width: 140px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.pageFormContent dt {
+	text-align: right;
+}
+
+.pageFormContent dt.tLeft {
+	text-align: left;
+}
+
+.pageFormContent dd {
+	white-space: nowrap;
+}
+
+.formBar {
+	padding: 4px 5px;
+	height: auto;
+}
+
+/* Pages dialog */
+.dialog .pageHeader {
+	border: none;
+}
+
+.dialog .pageContent {
+	border: 1px solid #333;
+	border-radius: 2px;
+}
+
+.dialog .pageFormContent, .dialog .viewInfo {
+	border: none;
+}
+
+.dialog .formBar {
+	border-width: 1px 0 0 0;
+}
+
+#drag_content .formBar ul li {
+	margin-left: 0;
+}
+
+/*����2��div*/
+.horizontal_layout {
+	width: 100%;
+	margin-top: 15px;
+}
+
+.horizontal_layout .horizontal_div {
+	width: 450px;
+	display: inline-block;
+	float: left;
+	margin-right: 20px;
+}
+
+.horizontal_layout .panelBar {
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+
+.horizontal_layout .grid {
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	width: 448px;
+}
+
+/* jie */
+#footer {
+	color: #fff;
+}
+
+#footer a {
+	color: #fff;
+}
+
+#new_menu {
+	width: 230px;
+	height: 100%;
+}
+
+#new_menu>ul {
+	display: none;
+	margin: 0 0 0 7px;
+	position: absolute;
+	width: 220px;
+}
+
+#new_menu>ul>li {
+	display: block;
+	position: relative;
+	padding: 1px;
+	width: 220px;
+	margin-top: 3px;
+}
+
+#new_menu>ul>li>a {
+	color: #fff;
+	display: block;
+	padding: 10px 0 10px 60px;
+	position: relative;
+}
+
+#new_menu>ul>li>a i {
+	display: inline-block;
+	position: absolute;
+	width: 22px;
+	height: 21px;
+	top: 7px;
+	left: 25px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+#new_menu>ul>li>a span {
+	font-size: 14px;
+	display: inline-block;
+}
+
+#new_menu>ul>li.active {
+	background: url(../images/shadow_bg.png) repeat;
+	padding: 0;
+	border: 1px solid #bbb;
+	box-shadow: 0 0 1px #000;
+	border-radius: 3px;
+}
+
+#new_menu>ul>li.active>a {
+	text-decoration: none;
+	border-radius: 3px;
+}
+
+#new_menu>ul>li.active>a i {
+	top: 7px;
+	left: 25px;
+}
+
+#new_menu>ul>li:hover {
+	background: url(../images/shadow_bg.png) repeat;
+	padding: 0;
+	border: 1px solid #bbb;
+	box-shadow: 0 0 1px #000;
+	border-radius: 3px;
+}
+
+#new_menu>ul>li:hover>a {
+	text-decoration: none;
+	border-radius: 3px;
+}
+
+#new_menu>ul>li.hover>a i {
+	top: 11px;
+	left: 23px;
+}
+
+#new_menu>ul>li>a i.icon_1_1 {
+	background-image: url(../images/icon/1_1.png);
+}
+
+#new_menu>ul>li>a i.icon_1_2 {
+	background-image: url(../images/icon/1_2.png);
+}
+
+#new_menu>ul>li>a i.icon_1_3 {
+	background-image: url(../images/icon/1_3.png);
+}
+
+#new_menu>ul>li>a i.icon_1_4 {
+	background-image: url(../images/icon/1_4.png);
+}
+
+#new_menu>ul>li>a i.icon_1_5 {
+	background-image: url(../images/icon/1_5.png);
+}
+
+#new_menu>ul>li>a i.icon_1_6 {
+	background-image: url(../images/icon/1_6.png);
+}
+
+#new_menu>ul>li>a i.icon_2_1 {
+	background-image: url(../images/icon/2_1.png);
+}
+
+#new_menu>ul>li>a i.icon_2_2 {
+	background-image: url(../images/icon/2_2.png);
+}
+
+#new_menu>ul>li>a i.icon_2_3 {
+	background-image: url(../images/icon/2_3.png);
+}
+
+#new_menu>ul>li>a i.icon_2_4 {
+	background-image: url(../images/icon/2_4.png);
+}
+
+#new_menu>ul>li>a i.icon_2_5 {
+	background-image: url(../images/icon/2_5.png);
+}
+
+#new_menu>ul>li>a i.icon_2_6 {
+	background-image: url(../images/icon/2_6.png);
+}
+
+#new_menu>ul>li>a i.icon_3_1 {
+	background-image: url(../images/icon/3_1.png);
+}
+
+#new_menu>ul>li>a i.icon_3_2 {
+	background-image: url(../images/icon/3_2.png);
+}
+
+#new_menu>ul>li>a i.icon_3_3 {
+	background-image: url(../images/icon/3_3.png);
+}
+
+#new_menu>ul>li>a i.icon_3_4 {
+	background-image: url(../images/icon/3_4.png);
+}
+
+#new_menu>ul>li>a i.icon_4_1 {
+	background-image: url(../images/icon/4_1.png);
+}
+
+#new_menu>ul>li>a i.icon_4_2 {
+	background-image: url(../images/icon/4_2.png);
+}
+
+#new_menu>ul>li>a i.icon_4_3 {
+	background-image: url(../images/icon/4_3.png);
+}
+
+#new_menu>ul>li>a i.icon_4_4 {
+	background-image: url(../images/icon/4_4.png);
+}
+
+#new_menu>ul>li>a i.icon_4_5 {
+	background-image: url(../images/icon/4_5.png);
+}
+
+#new_menu>ul>li>a i.icon_5_1 {
+	background-image: url(../images/icon/5_1.png);
+}
+
+#new_menu>ul>li>a i.icon_6_1 {
+	background-image: url(../images/icon/6_1.png);
+}
+
+#new_menu>ul>li>a i.icon_6_2 {
+	background-image: url(../images/icon/6_2.png);
+}
+
+#new_menu>ul>li>a i.icon_6_3 {
+	background-image: url(../images/icon/6_3.png);
+}
+
+#new_menu>ul>li>a i.icon_6_4 {
+	background-image: url(../images/icon/6_4.png);
+}
+
+#new_menu>ul>li>a i.icon_6_5 {
+	background-image: url(../images/icon/6_5.png);
+}
+
+#new_menu>ul>li ul {
+	margin: 0;
+	padding: 0;
+	display: none;
+}
+
+#new_menu>ul>li ul li a {
+	display: block;
+	padding: 10px 0 10px 85px;
+	color: #fff;
+	font-size: 13px;
+	background: url(../images/t_line.png) no-repeat 62px -11px;
+}
+
+#new_menu>ul>li ul li:last-child a {
+	background-position: 62px -51px;
+}
+
+#new_menu>ul>li ul li a:hover {
+	color: #000;
+	text-shadow: 1px 1px 5px #fff;
+	text-decoration: none;
+}
+
+/*new header*/
+.userHead {
+	position: absolute;
+	top: 12px;
+	left: 40px;
+}
+
+.userHead p {
+	color: #fff;
+	font-size: 13px;
+	position: absolute;
+	top: 0;
+	left: 70px;
+	width: 200px;
+}
+
+.userHead p>span {
+	display: block;
+	height: 22px;
+	line-height: 22px;
+	font-size: 13px;
+}
+
+.userHead>a {
+	display: inline-block;
+	height: 60px;
+	width: 55px;
+}
+
+#change_role {
+	color: #3CF;
+}
+
+.quick_link {
+	position: absolute;
+	left: 300px;
+	top: 8px;
+}
+
+.quick_link li {
+	float: left;
+	text-align: center;
+	padding: 1px;
+	margin-right: 8px;
+}
+
+.quick_link li:hover, .quick_link li.active {
+	background: url(../images/shadow_bg.png) repeat;
+	padding: 0;
+	border: 1px solid #bbb;
+	box-shadow: 0 0 2px #333;
+	border-radius: 3px;
+}
+
+.quick_link li a {
+	display: block;
+	padding: 52px 12px 5px;
+	color: #fff;
+}
+
+.quick_link li a:hover {
+	text-decoration: none;
+}
+
+.func_btn {
+	position: absolute;
+	right: 3px;
+	top: 0px;
+}
+
+.func_btn a {
+	height: 19px;
+	display: block;
+	float: left;
+}
+
+.winbtn-leftadge {
+	background-image: url(../images/left.png);
+	width: 2px;
+	height: 19px;
+	float: left;
+}
+
+.winbtn-spacer {
+	background-image: url(../images/spacer.png);
+	float: left;
+	height: 19px;
+	width: 1px;
+}
+
+.winbtn-rightedge {
+	background-image: url(../images/right.png);
+	float: left;
+	height: 19px;
+	width: 2px;
+}
+
+.icon_skin {
+	background: url(../images/btn-skin.png) no-repeat 0 0;
+	width: 26px;
+}
+
+.icon_exit {
+	background: url(../images/btn-close.png) no-repeat 0 0;
+	width: 46px;
+}
+
+.icon_logout {
+	background: url(../images/btn-logout.png) no-repeat 0 0;
+	width: 26px;
+}
+
+.icon_min {
+	background: url(../images/btn-min.png) no-repeat 0 0;
+	width: 27px;
+}
+
+.icon_skin:hover {
+	background-position: 0 -38px;
+	box-shadow: 0 0 15px #00b4ff;
+}
+
+.icon_exit:hover {
+	background-position: 0 -38px;
+	box-shadow: 0 0 15px #f00;
+}
+
+.icon_logout:hover {
+	background-position: 0 -38px;
+	box-shadow: 0 0 15px #00b4ff;
+}
+
+.icon_min:hover {
+	background-position: 0 -38px;
+	box-shadow: 0 0 15px #00b4ff;
+}
+
+.icon_data {
+	background: url(../images/icon1.png) no-repeat center 5px;
+}
+
+.icon_security {
+	background: url(../images/icon6.png) no-repeat center 5px;
+}
+
+.icon_play {
+	background: url(../images/icon2.png) no-repeat center 5px;
+}
+
+.icon_business {
+	background: url(../images/icon4.png) no-repeat center 5px;
+}
+
+.icon_goods {
+	background: url(../images/icon5.png) no-repeat center 5px;
+}
+
+.icon_report {
+	background: url(../images/icon3.png) no-repeat center 5px;
+}
+
+.icon_user {
+	background: url(../images/icon0.png) no-repeat;
+}
+
+.icon_member {
+	background: url(../images/icon12.png) no-repeat center 5px;
+}
+
+.icon_coupon {
+	background: url(../images/icon13.png) no-repeat center 5px;
+}
+
+/*搜索区*/
+.search_div {
+	padding: 20px;
+}
+
+.search_div button {
+	margin-left: 20px;
+}
+
+.top_area {
+	padding: 5px 0;
+}
+
+.top_area td {
+	height: 50px;
+	vertical-align: middle;
+	font-size: 14px;
+}
+
+.top_area td.msg {
+	width: 120px;
+	text-align: right;
+}
+
+.top_area td .textInput {
+	width: 130px;
+	height: 20px;
+	line-height: 20px;
+}
+
+.top_area button {
+	margin-left: 20px;
+}
+
+/*筛选区*/
+.filter_div {
+	padding: 0 5px;
+}
+
+.filter_div dl {
+	margin-top: 5px;
+}
+
+fieldset {
+	border: 1px solid #ccc;
+	padding: 5px 15px 15px;
+}
+
+fieldset legend {
+	border: none;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+fieldset span {
+	display: inline-block;
+	width: auto;
+	font-size: 13px;
+	height: 28px;
+	line-height: 28px;
+}
+
+#schedule_info span {
+	margin-right: 30px;
+}
+
+#schedule_set {
+	margin-top: 20px;
+	padding-bottom: 10px;
+}
+
+#schedule_set span {
+	margin-right: 50px;
+}
+
+#schedule_set span input[type=text] {
+	width: 30px;
+	height: 20px;
+	float: none;
+	text-indent: 3px;
+}
+
+#schedule_set label {
+	padding-left: 0;
+	font-size: 13px;
+}
+
+#schedule_apply {
+	margin-top: 15px;
+}
+
+#schedule_apply label {
+	width: auto;
+	padding: 0;
+	margin-right: 50px;
+	font-size: 13px;
+}
+
+#schedule_apply span i {
+	font-style: normal;
+	font-weight: bold;
+	color: #f00;
+}
+
+.two_fieldset {
+	margin-top: 20px;
+	width: 100%;
+}
+
+.two_fieldset fieldset {
+	width: 380px;
+	display: inline-block;
+	height: 310px;
+}
+
+#schedule_price_set {
+	float: left;
+}
+
+#schedule_channel_set {
+	float: right;
+}
+
+#schedule_price_set span {
+	padding: 10px;
+}
+
+#schedule_price_set select {
+	float: none;
+}
+
+#schedule_price_set .gridThead table {
+	border-top: 1px solid #D0D0D0;
+	border-left: 1px solid #D0D0D0;
+}
+
+#schedule_price_set .gridTbody table {
+	border-left: 1px solid #EDEDED;
+}
+
+#schedule_price_set .gridTbody table td, #schedule_price_set .gridThead table th
+	{
+	text-align: center;
+}
+
+.diy_table td a {
+	display: inline-block;
+	width: 20px;
+	height: 25px;
+	background: url(../images/caozuo.png) no-repeat;
+}
+
+.diy_table .up {
+	background-position: 4px 4px;
+}
+
+.diy_table .down {
+	background-position: 4px -39px;
+}
+
+.diy_table .remove {
+	background-position: 4px -77px;
+}
+
+.two_fieldset fieldset#schedule_channel_set {
+	min-height: 310px;
+	height: auto;
+}
+
+#schedule_channel_set span {
+	display: block;
+	margin-top: 15px;
+}
+
+#schedule_channel_set span label {
+	font-size: 13px;
+}
+
+#schedule_channel_set span label input[type="checkbox"] {
+	margin-right: 5px;
+}
+
+.continuous_info {
+	width: 100%;
+}
+
+.continuous_info input[type=text] {
+	float: none;
+}
+
+.continuous_info span {
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	font-size: 13px;
+	margin-right: 30px;
+}
+
+.continuous_info table {
+	width: 100%;
+}
+
+.continuous_info .grid {
+	margin-top: 10px;
+}
+
+.continuous_info .gridThead table {
+	border-top: 1px solid #D0D0D0;
+	border-left: 1px solid #D0D0D0;
+}
+
+.continuous_info .gridThead table .gridCol {
+	text-align: center;
+}
+
+.continuous_info .gridTbody table {
+	border-left: 1px solid #EDEDED;
+}
+
+.continuous_info .gridTbody table td {
+	text-indent: 5px;
+}
+
+/*时钟*/
+#my_clock {
+	position: absolute;
+	bottom: 28px;
+	left: 10px;
+	width: 100%;
+	height: auto;
+	clear: both;
+}
+
+/*上传*/
+.uploadify-button {
+	background: none;
+	border: none;
+	border-radius: 0;
+	background-size: 100% 100%;
+	color: #000;
+	text-shadow: none;
+	font: normal 12px Arial, Helvetica, sans-serif
+}
+
+.uploadify-button:hover {
+	background-image: url(../images/btn_on.png);
+	border: none;
+	border-radius: 0;
+	background-size: 100% 100%;
+}
+
+.uploadify:hover .uploadify-button {
+	background-image: url(../images/btn_on.png);
+	border: none;
+	border-radius: 0;
+	background-size: 100% 100%;
+}
+
+#drag_content .uploadify-queue {
+	display: none;
+}
+
+/*快捷功能*/
+.quick_func {
+	padding: 10px 60px 20px;
+}
+
+.quick_func a {
+	float: left;
+	margin-left: 50px;
+	margin-top: 50px;
+	display: inline-block;
+	border: 1px dashed #fff;
+	border-radius: 4px;
+	text-decoration: none;
+}
+
+.quick_func a:hover {
+	border-color: #999;
+}
+
+.quick_func a:active {
+	border-color: #333;
+	box-shadow: 3px 3px 10px #333;
+}
+
+.ng_function {
+	padding: 2px 10px 5px 10px;
+}
+
+.ng_function>div {
+	height: 90px;
+	width: 90px;
+	background-size: 80% 80%;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.ng_function>span {
+	display: block;
+	width: 90px;
+	height: 25px;
+	line-height: 25px;
+	font-size: 14px;
+	text-align: center;
+	color: #333;
+}
+
+.quick_1 {
+	background-image: url(../images/function/1.png);
+}
+
+.quick_2 {
+	background-image: url(../images/function/2.png);
+}
+
+.quick_3 {
+	background-image: url(../images/function/3.png);
+}
+
+.quick_4 {
+	background-image: url(../images/function/4.png);
+}
+
+.quick_5 {
+	background-image: url(../images/function/5.png);
+}
+
+.quick_6 {
+	background-image: url(../images/function/6.png);
+}
+
+.quick_7 {
+	background-image: url(../images/function/7.png);
+}
+
+.quick_8 {
+	background-image: url(../images/function/8.png);
+}
+
+.quick_9 {
+	background-image: url(../images/function/9.png);
+}
+
+.quick_10 {
+	background-image: url(../images/function/10.png);
+}
+
+.quick_11 {
+	background-image: url(../images/function/11.png);
+}
+
+.ng_function>div.quick_more {
+	background-image: url(../images/function/more.png);
+	background-size: 50% 50%;
+	opacity: 0.5;
+}
+
+.quick_func a.function_more {
+	border-color: #ccc;
+}
+
+.quick_func a.function_more span {
+	color: #999;
+}
+
+.quick_func a.function_more:hover {
+	border-color: #999;
+}
+
+.quick_func a.function_more:hover span, .quick_func a.function_more:active span
+	{
+	color: #333;
+}
+
+.quick_func a.function_more:active {
+	border-color: #333;
+}
+
+/*自定义*/
+.csy_span {
+	float: left;
+	display: inline-block;
+	height: 26px;
+	line-height: 26px;
+	width: 210px;
+}
+
+/*重写错误提示样式*/
+span.error {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	padding: 0;
+	background: url(../images/inputError.png) no-repeat;
+	position: relative;
+	top: 2px;
+	left: -27px;
+}
+
+#dialog_header {
+	padding: 0;
+}
+
+#dialog_header label {
+	text-align: left;
+}
+
+/*提示框样式*/
+.alert .toolBar a {
+	background: url(../default/../images/btn_off.png) no-repeat;
+	background-size: 100% 100%;
+	line-height: 25px;
+	height: 25px;
+	margin: 0;
+	border: 0;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000;
+	cursor: pointer;
+	padding: 0;
+}
+
+.alert .toolBar a:hover {
+	background-image: url(../default/../images/btn_on.png);
+}
+
+.alert .toolBar a span {
+	background: none;
+	padding: 0 15px;
+}
+
+/*二级菜单是否包含三级菜单*/
+.hasMore {
+	background: url(../images/upDown.png) no-repeat 170px -54px;
+}
+
+.hasMoreOpen {
+	background: url(../images/upDown.png) no-repeat 170px -4px;
+}

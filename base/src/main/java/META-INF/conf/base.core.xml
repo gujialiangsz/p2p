@@ -41,7 +41,7 @@
 		<property name="automaticTestTable" value="${jdbc.automaticTestTable:C3P0_TEST_DONOT_DELETE}" />
 	</bean>
 	<!-- 定义基本的Hibernate SessionFactory，供继承。 -->
-	<bean id="sessionFactory" class="com.biocome.base.db.LocalSessionFactoryBean">
+	<bean id="sessionFactory" class="com.qiushui.base.db.LocalSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
 		<property name="hibernateProperties">
 			<props>
@@ -81,5 +81,5 @@
 	<!-- 启动Spring AOP -->
 	<aop:aspectj-autoproxy />
 	<!-- 加载base下的组件 -->
-	<context:component-scan base-package="com.biocome.base" />
+	<context:component-scan base-package="com.qiushui.base" />
 </beans>
