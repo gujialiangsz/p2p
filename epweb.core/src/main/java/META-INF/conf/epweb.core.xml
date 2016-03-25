@@ -120,5 +120,5 @@
 	<task:annotation-driven executor="taskExecutor"
 		scheduler="taskScheduler" />
 	<!-- 加载com.qiushui下的组件 -->
-	<context:component-scan base-package="com.qiushui.clearing.core" />
+	<context:component-scan base-package="com.qiushui" />
 </beans>

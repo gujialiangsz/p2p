@@ -2,9 +2,9 @@
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
 	<!-- 数据库设置 -->
-	<entry key="db.url">jdbc:mysql://192.168.3.115:3306/smartwatch?characterEncoding=UTF-8</entry>
-	<entry key="db.username">tiggerfish</entry>
-	<entry key="db.password">atlastf</entry>
+	<entry key="db.url">jdbc:mysql://192.168.1.108:3306/smartwatch?characterEncoding=UTF-8</entry>
+	<entry key="db.username">root</entry>
+	<entry key="db.password">epweb2016</entry>
 	<entry key="db.maxActive">100</entry>
 	<entry key="db.minIdle">10</entry>
 	<entry key="db.initialSize">10</entry>

@@ -58,14 +58,6 @@
     </head>
     <body>        
         
-        <div class="loading_up"></div>
-        <div class="loading">
-            <div class="progress-bar green stripes">
-                <span></span>
-            </div>
-        </div>
-
-        
         <div class="login_content">
 
             <h1 class="title"><span class="logo"></span>万市通运营系统V1.0</h1>
@@ -107,32 +99,6 @@
                 }
             }
             
-            
-           //页面加载时，从cookie获取精度值
-		   if(getCookie("first_login").length <= 0){
-		   	    //页面初始加载，展开
-	            $(".progress-bar span").animate({"width" : "350px"}, 1500, function(){
-	            	setTimeout(function(){$(".loading_up, .loading").slideUp(500); } , 1000);
-	            });
-		   		
-		   	    document.cookie = "first_login=1";
-		   }else{
-		   		//页面初始加载，展开
-	            $(".loading_up, .loading").hide();
-		   }
-            
-            //获取cookie, 是否第一次页面
-		    function getCookie(cookieName){ 
-		        var strCookie=document.cookie; 
-		        var arrCookie=strCookie.split("; ");
-		        
-		        for(var i=0;i<arrCookie.length;i++){ 
-		            var arr=arrCookie[i].split("="); 
-		            if(arr[0]==cookieName)return arr[1]; 
-		        } 
-		        return ""; 
-		    }
-		            
         </script>
         
     </body>

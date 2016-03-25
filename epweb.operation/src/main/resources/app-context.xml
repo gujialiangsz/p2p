@@ -10,7 +10,7 @@
 	http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd" 
 	default-lazy-init="true" default-merge="true">
 	<!-- 加载Coo组件 -->
-	<import resource="classpath:META-INF/conf/clearing.core.xml" />
+	<import resource="classpath:META-INF/conf/epweb.core.xml" />
 	<import resource="classpath:META-INF/conf/base.mvc.xml" />
 	<import resource="classpath:META-INF/conf/base.mvc.security.xml" />
 	<bean
